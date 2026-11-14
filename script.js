@@ -11,6 +11,6 @@ Functions:["Run code on decrypted data inside a secure enclave, without exposing
 Cages:["Deploy backend code into isolated, attestable secure enclaves with a single command.","Read the docs"]};
 const pb=[...document.querySelectorAll(".pills button")];
 pb.forEach(b=>b.onclick=()=>{const k=b.dataset.p;pick(pb,b);$("prim-title").textContent=k;$("prim-text").textContent=prim[k][0]});
-const q=["“Evervault makes data security simple for developers.”","“Evervault lets our team ship secure products without slowing down.”","“Compliance went from months of work to a few days.”"];
+const logos=[$("q-logo").innerHTML,"<span>in LinkedIn</span>","<em>Ness</em>"];
 const qb=[...document.querySelectorAll("#testimonials button")];
-qb.forEach((b,i)=>b.onclick=()=>{pick(qb,b);$("q-text").textContent=q[i]});
+qb.forEach((b,i)=>b.onclick=()=>{pick(qb,b);$("q-logo").innerHTML=logos[i]});

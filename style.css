@@ -11,19 +11,19 @@ svg{display:block}
 .btn-ghost:hover{opacity:.7}
 .btns{display:flex;gap:14px;align-items:center}
 /* header */
-.site-header{position:absolute;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:22px 5vw}
+.site-header{position:absolute;top:0;left:0;right:0;z-index:10;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:22px 5vw}
 .logo{display:flex;align-items:center;gap:8px;font-weight:600;font-size:17px}
 .site-header nav ul{display:flex;gap:18px;padding:9px 18px;border:1px solid #23234a;border-radius:999px;font-size:11px;background:rgba(3,3,26,.6)}
 .site-header nav a{color:#c9c9de}.site-header nav a:hover,.site-header nav .on{color:#fff}
-.actions{display:flex;align-items:center;gap:16px;font-size:11px}
+.actions{display:flex;align-items:center;justify-content:flex-end;gap:16px;font-size:11px}
 /* headings */
 .big{font-weight:300;letter-spacing:-.02em;color:#8d8da6;line-height:1.15;font-size:clamp(28px,3.4vw,40px)}
 .big b{font-weight:300;color:#fff}
 .lead{color:#cfcfe6;font-size:12px;line-height:1.7;max-width:420px;margin:14px 0 20px}
 /* hero */
 #hero{position:relative;margin:0 2vw;border-radius:0 0 28px 28px;min-height:600px;display:flex;align-items:center;padding:140px 10vw 170px;
-background:radial-gradient(ellipse 90% 58% at 50% 112%,#fff 0,#d8ccff 6%,#6a45f0 24%,#2b1a8f 42%,transparent 72%),var(--bg)}
-#hero h1{font-size:clamp(36px,4.3vw,52px);max-width:400px}
+background:radial-gradient(ellipse 100% 62% at 50% 118%,#fff 0,#e3daff 9%,#7a55f5 27%,#3a22a8 45%,transparent 75%),var(--bg)}
+#hero h1{font-size:clamp(30px,4.3vw,52px);max-width:none}
 #hero .lead{font-size:11.5px;max-width:300px;margin:12px 0 18px}
 .chat{position:absolute;right:20px;bottom:30px;width:30px;height:30px;border-radius:50%;background:var(--purple)}
 /* customers */
@@ -32,7 +32,7 @@ background:radial-gradient(ellipse 90% 58% at 50% 112%,#fff 0,#d8ccff 6%,#6a45f0
 #customers p{color:var(--muted);font-size:11px;max-width:230px;margin:auto}
 /* solutions */
 #solutions{margin:40px 2vw 0;border-radius:28px 28px 0 0;padding:100px 20px 40px;
-background:radial-gradient(ellipse 90% 58% at 50% -12%,#fff 0,#d8ccff 6%,#6a45f0 24%,#2b1a8f 42%,transparent 72%),var(--bg)}
+background:radial-gradient(ellipse 100% 62% at 50% -18%,#fff 0,#e3daff 9%,#7a55f5 27%,#3a22a8 45%,transparent 75%),var(--bg)}
 #solutions>*{max-width:620px;margin-left:auto;margin-right:auto}
 .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:22px auto;font-size:11px}
 .tabs button,.pills button{background:none;border:1px solid transparent;color:var(--muted);padding:6px 14px;border-radius:999px}
@@ -76,16 +76,14 @@ figure svg{width:100%;height:auto}
 .group h3{display:inline-block;font-weight:400;font-size:10px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;margin-bottom:22px}
 .group>div{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid var(--line);padding-top:24px}
 .group h4{display:flex;align-items:center;gap:6px;font-weight:400;font-size:12px;margin-bottom:6px}
-.group h4:before{content:"";width:9px;height:9px;border:1px solid #cfcfe6;border-radius:3px}
 .group p{color:var(--muted);font-size:11px;line-height:1.6}
 /* testimonials */
 #testimonials{text-align:center;border-bottom:1px solid var(--line);padding-bottom:70px}
-.arc{position:relative;width:270px;height:75px;margin:0 auto 75px;border:1px solid #1e1e3e;border-bottom:0;border-radius:135px 135px 0 0}
+.arc{position:relative;width:min(330px,80%);height:95px;margin:0 auto 70px;border-radius:165px 165px 0 0;border:1px solid #1e1e3e;border-bottom:0;border-radius:135px 135px 0 0}
 .arc svg{position:absolute;left:50%;top:-10px;transform:translateX(-50%)}
 #testimonials ul{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 #testimonials button{background:none;border:1px solid var(--line);color:#6c6c8c;font-size:10px;padding:6px 14px;border-radius:999px}
 #testimonials button.active{color:#fff;background:#13132e;box-shadow:0 0 24px rgba(160,150,255,.25)}
-#q-text{font-size:11px;color:var(--muted);margin-top:22px;min-height:20px}
 /* cta */
 #cta{text-align:center;margin:0 2vw;border-radius:28px;padding:130px 20px;
 background:linear-gradient(180deg,#26177a 0,var(--bg) 28%,var(--bg) 72%,#26177a 100%)}
@@ -98,12 +96,24 @@ background:linear-gradient(180deg,#26177a 0,var(--bg) 28%,var(--bg) 72%,#26177a 
 .bottom{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:16px 5vw;font-size:10px;color:#8585a3}
 .bottom p+p:before{content:"• ";color:var(--purple)}
 .page{padding:140px 20px 80px;max-width:720px;margin:0 auto}.page p{color:#cfcfe6;margin-top:16px}
-@media(max-width:800px){
-.site-header{position:static;flex-wrap:wrap;gap:12px}.site-header nav{order:3;width:100%;overflow-x:auto}.site-header nav ul{width:max-content}
+@media(max-width:560px){
+.site-header{position:static}.site-header nav{order:3;width:100%;overflow-x:auto}.site-header nav ul{width:max-content}
 #hero{padding:60px 24px 120px;min-height:480px}
 #customers ul{grid-template-columns:repeat(2,1fr)}
-.card.split,#primitives .card,.grid,.group>div{grid-template-columns:1fr}
-#primitives .card{padding:30px;height:auto}.chips{display:none}
+.card.split,.grid,.group>div{grid-template-columns:1fr}
+.site-header{display:flex;flex-wrap:wrap;gap:12px}
 .grid .wide{grid-column:auto}.deco,.arcs,.ico{display:none}
 .cols{grid-template-columns:repeat(2,1fr)}
 }
+
+#primitives h2.big{max-width:11em;margin:0 auto}
+#platform h2.big{max-width:10em;margin:0 auto}
+#cta h2{max-width:9.6em}
+.slider{display:flex;gap:14px;width:max-content;margin-left:max(14px,calc(50% - 330px))}
+#primitives .slider .card{width:min(660px,86vw);max-width:none;flex:none;margin:0;height:290px;padding:0 0 0 50px;grid-template-columns:1fr 1.25fr}
+#primitives .slider .peek{padding:0}
+.group h4 i{font-style:normal;color:#cfcfe6;width:12px;text-align:center}
+#q-logo{position:absolute;left:50%;top:-14px;transform:translateX(-50%);font-weight:700;font-size:20px;white-space:nowrap;line-height:1}
+
+.actions a{white-space:nowrap}
+#primitives h2.big,#platform h2.big,#cta h2{max-width:none}
