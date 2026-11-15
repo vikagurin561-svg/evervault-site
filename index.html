@@ -4,100 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Evervault: building blocks for data security and compliance">
-<meta name="theme-color" content="#04041a">
+<meta name="theme-color" content="#03031a">
 <title>Evervault — Data Security</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="logo" href="index.html"><svg width="18" height="18" viewBox="0 0 20 20" fill="#fff"><path d="M10 1 1 4.5v2L10 10l9-3.5v-2z"/><path d="M1 8.5v2L10 14l9-3.5v-2L10 12z"/><path d="M1 12.5v2L10 19l9-4.5v-2L10 16z"/></svg> evervault</a>
-  <nav aria-label="Main navigation"><ul>
-    <li><a class="on" href="index.html">Home</a></li><li><a href="#solutions">Solutions</a></li><li><a href="#customers">Customers</a></li><li><a href="#platform">Pricing</a></li><li><a href="#trust">Resources</a></li><li><a href="about.html">Docs</a></li>
-  </ul></nav>
-  <div class="actions"><a href="#">Log in</a><a class="btn btn-white" href="#cta">Request a demo</a></div>
+<header class="hd">
+  <a class="logo" href="index.html"><svg width="22" height="24" viewBox="0 0 24 26" fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-linecap="round"><path stroke-width="1.5" d="M12 2 3 6.5l9 4.5 9-4.5z"/><path fill="none" stroke-width="2.4" d="M3.5 12 12 16.2 20.5 12M3.5 17.5 12 21.7l8.5-4.2"/></svg> evervault</a>
+  <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a class="d" href="#solutions">Solutions</a></li><li><a href="#customers">Customers</a></li><li><a href="#platform">Pricing</a></li><li><a href="#trust">Resources</a></li><li><a href="about.html">Docs</a></li></ul></nav>
+  <div class="act"><a href="#">Log in</a><a class="btn w" href="#cta">Request a demo</a></div>
 </header>
 <main>
-<section id="hero">
-  <div><h1 class="big">Building blocks<br>for <b>data security</b><br>and compliance</h1>
-  <p class="lead">Evervault provides developers with world-class infrastructure to solve complex data security and compliance problems in days, not months.</p>
-  <div class="btns"><a class="btn btn-white" href="#cta">Request a demo</a><a class="btn-ghost" style="font-size:12px" href="#cta">Try for free</a></div></div>
-  <span class="chat" aria-hidden="true"></span>
+<section class="hero"><div class="glow"></div>
+  <div class="c in"><h1 class="h"><span class="l">Building blocks</span><span class="l">for data security</span><span class="l">and compliance</span></h1>
+  <p>Evervault provides developers with world-class infrastructure to solve complex data security and compliance problems in days, not months.</p>
+  <div class="btns"><a class="btn w" href="#cta">Request a demo</a><a class="t" href="#cta">Try for free</a></div></div>
+  <span class="chat" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="3" width="14" height="13" rx="3.5"/><path d="M7 9.5c1 1.2 5 1.2 6 0"/></svg></span>
 </section>
-<section id="customers"><h2 hidden>Customers</h2>
-  <ul><li>◉ sorare</li><li>VISA</li><li><em>Ness</em></li><li>SafetyWing</li><li>unqork</li><li>stitch</li><li>xp</li><li>Vital</li><li>resly</li><li>Humaans</li></ul>
-  <p>Engineering leaders trust Evervault to protect their most sensitive data</p></section>
-<section id="solutions">
-  <h2 class="big">Easy <b>solutions</b> to complex<br>engineering problems</h2>
-  <div class="tabs"><button class="active" data-t="pci">PCI Compliance</button><button data-t="eaas">Encryption as a Service</button><button data-t="crypto">Crypto Custody</button></div>
-  <article class="card split" style="padding:40px 20px 40px 55px">
-    <div><h3 id="sol-title">Encrypt card data and streamline PCI DSS compliance</h3><p id="sol-text">Using Evervault to encrypt credit card data reduces the burden of becoming PCI compliant, so you can demonstrate PCI compliance to partners in days, rather than months. Save $100k+ and months of engineering time.</p><a class="btn btn-white" href="#">Learn more</a></div>
-    <figure aria-label="Card encryption diagram"><svg viewBox="10 28 300 212" fill="none" stroke="#c9c9e0" stroke-width="1" font-family="Inter" font-size="7">
-<g stroke="#3a3a5c"><path d="M45 100v36M125 62V44M188 80V44M268 74V44"/><path d="M98 168l32-16M178 128l50-24" stroke-dasharray="0"/></g>
-<g fill="#fff" stroke="none"><text x="22" y="92">User's Card</text><text x="102" y="38">Collect or Display</text><text x="174" y="38">Server</text></g>
-<!-- card -->
-<path d="M22 156l64 32v44l-64-32z" fill="#0c0c28"/><path d="M22 156l8-4 64 32-8 4z" fill="#15153a"/><path d="M86 188l8-4v44l-8 4z" fill="#08081e"/>
-<g fill="#fff" stroke="none"><circle cx="34" cy="176" r="1"/><circle cx="40" cy="179" r="1"/><circle cx="46" cy="182" r="1"/><circle cx="52" cy="185" r="1"/><circle cx="58" cy="188" r="1"/><circle cx="64" cy="191" r="1"/></g>
-<!-- tablet -->
-<path d="M120 90l60 30v70l-60-30z" fill="#0b0b26"/><path d="M120 90l26-13 60 30-26 13z" fill="#15153a"/><path d="M180 120l26-13v70l-26 13z" fill="#08081e"/>
-<path d="M132 108l36 18v44l-36-18z" fill="#5b3be0" stroke="#8a6cff"/><path d="M132 108l8-4 36 18-8 4z" fill="#7b5cff" stroke="#8a6cff"/>
-<circle cx="150" cy="139" r="1.8" fill="#fff" stroke="none"/>
-<!-- cube -->
-<path d="M240 90l28-14 28 14-28 14z" fill="#15153a"/><path d="M240 90l28 14v34l-28-14z" fill="#0b0b26"/><path d="M268 104l28-14v34l-28 14z" fill="#08081e"/>
-<circle cx="256" cy="114" r="1.6" fill="#fff" stroke="none"/>
-<path d="M206 130l34-16" stroke="#3a3a5c"/>
-</svg></figure>
-  </article>
+<section id="customers"><h2 hidden>Customers</h2><ul><li><svg width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9.5" fill="none" stroke="#fff" stroke-width="2"/><path fill="#fff" d="M11 6l1.4 3 3.2.4-2.4 2.2.7 3.2L11 13l-2.9 1.8.7-3.2-2.4-2.2 3.2-.4z"/></svg><span style="font-weight:500;letter-spacing:.2px">sorare</span></li>
+<li style="font:italic 800 20px Georgia,serif;letter-spacing:.5px">VISA</li>
+<li style="font:italic 800 24px Georgia,serif;letter-spacing:-1px">Ness</li>
+<li style="font:600 17px Georgia,serif">SafetyWing</li>
+<li style="font-weight:700;font-size:18px;letter-spacing:.3px">unqork</li>
+<li><svg width="22" height="18" viewBox="0 0 22 18" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M3 6c4-4 14-4 16 0M3 12c3 3 12 4 16 0M6 9h10"/></svg><span style="font-weight:600">stitch</span></li>
+<li><span style="background:#fff;color:#03031a;font-weight:800;font-size:17px;width:34px;height:30px;border-radius:5px;display:grid;place-items:center">xp</span></li>
+<li style="font-weight:800;font-size:19px">Vital</li>
+<li style="font-weight:600;font-size:19px">resly</li>
+<li style="font-weight:900;font-size:15px;letter-spacing:.3px">Humaans</li></ul><p>Engineering leaders trust Evervault to protect their most sensitive data</p></section>
+<section id="solutions"><div class="glow"></div>
+  <div class="c"><h2 class="h"><span class="l">Easy solutions to complex</span><span class="l">engineering problems</span></h2>
+  <div class="tabs"><button class="on" data-t="pci">PCI Compliance</button><button data-t="eaas">Encryption as a Service</button><button data-t="crypto">Crypto Custody</button></div>
+  <article class="card sol"><div><h3 id="st">Encrypt card data and streamline PCI DSS compliance</h3><p id="sp">Using Evervault to encrypt credit card data reduces the burden of becoming PCI compliant, so you can demonstrate PCI compliance to partners in days, rather than months. Save $100k+ and months of engineering time.</p><a class="btn w" href="#">Learn more</a></div><figure aria-label="Card encryption diagram"><svg viewBox="0 0 265 250" fill="none" stroke="#7c7c96" stroke-width="1.2" stroke-linejoin="round" font-family="Inter,sans-serif" font-size="8.5"><g transform="translate(-520,-115)">
+<g stroke="#34344c"><path d="M530 218v36M622 148v34M745 130v35M593 289l15-8M699 228l14-10"/></g>
+<g fill="#fff" stroke="none"><text x="536" y="214">User's Card</text><text x="628" y="144">Collect or Display</text><text x="751" y="126">Server</text></g>
+<polygon fill="#1b1b2c" points="527,256 607,297 607,353 527,312"/><polygon fill="#262638" points="527,256 536,251 616,292 607,297"/><polygon fill="#14141f" points="607,297 616,292 616,348 607,353"/>
+<g fill="#fff" stroke="none"><circle cx="536.0" cy="289.0" r="1.7"/><circle cx="540.7" cy="291.5" r="1.7"/><circle cx="545.4" cy="294.0" r="1.7"/><circle cx="550.1" cy="296.5" r="1.7"/><circle cx="554.8" cy="299.0" r="1.7"/><circle cx="559.5" cy="301.5" r="1.7"/><circle cx="564.2" cy="304.0" r="1.7"/><circle cx="568.9" cy="306.5" r="1.7"/><circle cx="573.6" cy="309.0" r="1.7"/><circle cx="578.3" cy="311.5" r="1.7"/><circle cx="583.0" cy="314.0" r="1.7"/></g>
+<polygon fill="#1b1b2c" points="607,206 669,237 669,319 607,288"/><polygon fill="#262638" points="607,206 637,191 699,222 669,237"/><polygon fill="#14141f" points="669,237 699,222 699,304 669,319"/>
+<polygon fill="#6a3df0" stroke="#9c80ff" points="614,221 669,248 669,303 614,276"/><circle cx="638" cy="262" r="1.8" fill="#fff" stroke="none"/>
+<polygon fill="#1f1f31" points="745,166 776,183 776,217 745,234 713,217 713,183"/><path d="M713 183l32 17 31-17M745 200v34"/><circle cx="729" cy="208" r="1.8" fill="#fff" stroke="none"/>
+</g></svg></figure></article></div>
 </section>
-<section id="primitives" class="block">
-  <h2 class="big">Secure <b>data</b> with four<br>simple Primitives</h2>
-  <p class="lead">Primitives are building blocks for developers. They're fundamental, interoperable products for constructing any data security or compliance workflow.</p>
-  <div class="pills"><button data-p="Relay" class="active"><svg viewBox="0 0 64 56"><path d="M12 24l12-7 12 7v14l-12 7-12-7z"/><path class="fill" d="M34 10l12-6 12 6v14l-12 6-12-6z"/></svg>Relay</button><button data-p="Functions"><svg viewBox="0 0 64 56"><path d="M32 4l22 12v24L32 52 10 40V16z"/><path d="M10 16l22 12 22-12M32 28v24"/></svg>Functions</button><button data-p="UI Components"><svg viewBox="0 0 64 56"><path d="M32 4l22 12v24L32 52 10 40V16z"/><path d="M20 20l12-6 12 6v16l-12 6-12-6z"/></svg>UI Components</button><button data-p="Cages"><svg viewBox="0 0 64 56"><path d="M32 4l22 12v24L32 52 10 40V16z"/><path d="M32 28v24M10 16l22 12 22-12"/></svg>Cages</button></div>
-  <div class="slider"><article class="card"><div><h3 id="prim-title">Relay</h3><p id="prim-text">An encryption proxy which can be configured to encrypt or decrypt data within a network request. No additional configuration required.</p><a class="btn btn-dark" href="#">Read the docs</a></div>
-  <div class="chips" aria-hidden="true"><span>ssn: ev:ybCk5…</span><span>email: ev:F/kSPiMA8a=f…</span><span>password: ev:DjQpXSdjn4…</span><span>phone: ev:iO=x…</span><span>pan: ev:1S9jAtm1SW…</span><span>name: ev:7pB2&6hq…</span><span>ssn: 123-45-6789</span><span>email: claude@shannon.org</span></div></article><div class="card peek" aria-hidden="true"></div></div>
+<section id="primitives" class="ctr"><h2 class="h"><span class="l">Secure data with four</span><span class="l">simple Primitives</span></h2>
+  <p class="lead">Primitives are building blocks for developers. They’re <b>fundamental, interoperable products for constructing any data security or compliance workflow.</b></p>
+  <div class="pills"><button data-p="Relay" class=on><svg viewBox="0 0 112 100"><polygon class="" fill="#1b1b2f" points="26,31 52.846,46.5 52.846,77.5 26,93 -0.846,77.5 -0.846,46.5"/><path class="" d="M-0.846 46.5L26 62L52.846 46.5M26 62V93"/><polygon class="f" points="84,-1 110.846,14.5 110.846,45.5 84,61 57.154,45.5 57.154,14.5"/><path class="f" d="M57.154 14.5L84 30L110.846 14.5M84 30V61"/></svg>Relay</button><button data-p="Functions"><svg viewBox="0 0 112 100"><polygon class="" points="56,37 82.846,52.5 82.846,83.5 56,99 29.154,83.5 29.154,52.5"/><path class="" d="M29.154 52.5L56 68L82.846 52.5M56 68V99"/><polygon class="f" points="56,4 88,21 56,38 24,21"/><path d="M24 21v7l32 17 32-17v-7"/></svg>Functions</button><button data-p="UI Components"><svg viewBox="0 0 112 100"><polygon points="22,22 70,46 70,92 22,68"/><polygon points="22,22 42,12 90,36 70,46"/><polygon points="70,46 90,36 90,82 70,92"/><polygon class="f" points="32,37 60,51 60,80 32,66"/></svg>UI Components</button><button data-p="Cages"><svg viewBox="0 0 112 100"><polygon points="56,1 99,25 99,75 56,99 13,75 13,25"/><polygon class="f" points="56,23 79.382,36.5 79.382,63.5 56,77 32.618,63.5 32.618,36.5"/><path class="f" d="M32.618 36.5L56 50L79.382 36.5M56 50V77"/></svg>Cages</button></div>
+  <div class="slider"><article class="card slide"><div class="tx"><h3 id="pt">Relay</h3><p id="pp">An encryption proxy which can be<br>configured to encrypt or decrypt data within<br>a network request. No additional<br>configuration required.</p><a class="btn g" href="#">Read the docs</a></div>
+  <div class="stage" aria-hidden="true"><div class="term">Server listening on <b>port 8080</b><i></i></div><div class="brw"></div><div class="vl"></div><span class="chip l" style="top:18px"><b>ssn:</b>ev:ybCk5...</span><span class="chip r" style="top:58px"><b>email:</b>ev:F/kSPiMA8a=f...</span><span class="chip l" style="top:98px"><b>password:</b>ev:DjQpXSdjn4...</span><span class="chip r" style="top:137px"><b>phone:</b>ev:iO=x...</span><span class="chip l" style="top:176px"><b>pan:</b>ev:1$9jAtm1SW...</span><span class="chip r" style="top:216px"><b>name:</b>ev:7pB2&amp;6hq...</span><span class="chip l" style="top:257px"><b>ssn:</b>123-45-6789</span><span class="chip r" style="top:294px"><b>email:</b>claude@shannon.org</span><span class="chip l" style="top:337px"><b>password:</b>shannon10e120num</span><span class="chip r" style="top:378px"><b>phone:</b>+123456789</span><span class="chip l" style="top:418px"><b>pan:</b>4242424242424242</span><span class="chip r" style="top:457px"><b>name:</b>Claude Shannon</span></div></article><article class="card slide" aria-hidden="true"></article></div>
 </section>
-<section id="platform" class="block wrap">
-  <h2 class="big">Powered by an easy-<br>to-use, <b>developer-<br>friendly</b> platform</h2>
-  <p class="lead">All Primitives share a common suite of platform features that enhance security and ensure Evervault fits neatly into your existing infrastructure.</p>
-  <div class="grid">
-    <article class="card wide"><div class="arcs"></div><span class="ico" style="right:150px;top:30px">⚛</span><span class="ico" style="right:90px;top:62px">node</span><span class="ico" style="right:150px;top:100px">py</span><div><h3>SDKs and REST API</h3><p>Use language-specific SDKs or our REST API to integrate Evervault seamlessly.</p></div></article>
-    <article class="card"><h3>Usage Logs</h3><p>Get full visibility into how your Primitives are being used.</p></article>
-    <article class="card"><h3>Alerting</h3><p>Configure alerts on Primitives to notify you when specific events occur.</p></article>
-    <article class="card wide"><div><h3>Data Policies</h3><p>Set clear rules that dictate how and when encrypted data can be decrypted.</p></div>
-      <div class="deco"><div><i class="sq"></i>Allow Decryption for <em>api.stripe.com</em></div><div><i></i>when Request IP equals <em>92.158.1.38</em></div><div><i></i>and Region equals <em>US (Virginia)</em></div><div><i></i>Add condition</div></div></article>
-    <article class="card wide"><div><h3>Audit Logging</h3><p>Keep track of all user activity within your Evervault Team.</p></div>
-      <div class="deco"><div><i></i>Claude <small>created Inbound Relay</small> api-stripe-com</div><div><i></i>Nev <small>created API Key</small> EU Resources Key</div><div><i></i>Eoin <small>deleted Function</small> validate-credit-card</div><div><i></i>Anna <small>invited</small> steve@acme.co</div><div><i></i>Thomas <small>updated Outbound Relay</small> api.adyen.co</div></div></article>
-    <article class="card"><h3>Access Control</h3><p>Control which members of your team can access and modify Primitives.</p></article>
-  </div>
+<section id="platform" class="c ctr"><h2 class="h"><span class="l">Powered by an easy-</span><span class="l">to-use, developer-</span><span class="l">friendly platform</span></h2>
+  <p class="lead">All Primitives share a common <b>suite of platform features</b> that enhance security and ensure Evervault fits neatly into your existing infrastructure.</p>
+  <div class="grid" style="text-align:left">
+  <article class="card wide"><div class="arcs"><i style="width:474px;height:474px"></i><i style="width:326px;height:326px"></i><i style="width:172px;height:172px"></i><span class="ico" style="left:239px;top:170px"><svg width="30" height="30" viewBox="-12 -12 24 24" fill="none" stroke="#fff" stroke-width="1.1"><ellipse rx="10" ry="4"/><ellipse rx="10" ry="4" transform="rotate(60)"/><ellipse rx="10" ry="4" transform="rotate(120)"/><circle r="1.6" fill="#fff"/></svg></span><span class="ico" style="left:353px;top:148px;font-size:15px;font-style:italic">node</span><span class="ico" style="left:402px;top:206px;font-size:20px">❖</span></div><h3>SDKs and REST API</h3><p>Use language-specific SDKs or our REST API to integrate Evervault seamlessly.</p></article>
+  <article class="card"><h3>Usage Logs</h3><p>Get full visibility into how your Primitives are being used.</p></article>
+  <article class="card"><h3>Alerting</h3><p>Configure alerts on Primitives to notify you when specific events occur.</p></article>
+  <article class="card wide"><div class="rules"><div class="rule" style="top:-1px"><div><span class="ib p"><svg viewBox="0 0 16 16"><path d="M8 2 3 4v4c0 3 2.2 5 5 6 2.8-1 5-3 5-6V4z"/></svg></span>Allow Decryption <small>for</small> <em>api.stripe.com</em></div><div><span class="ib "><svg viewBox="0 0 16 16"><circle cx="8" cy="4" r="1.5"/><circle cx="4" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><path d="M8 5.5 4 10.5M8 5.5l4 5"/></svg></span>when Request IP equals <em>92.158.1.38</em></div><div><span class="ib "><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg></span>and Region equals <em>US (Virginia)</em></div><div><span class="ib "><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></span>Add condition</div></div><div class="rule" style="top:193px"><div><span class="ib p"><svg viewBox="0 0 16 16"><path d="M8 2 3 4v4c0 3 2.2 5 5 6 2.8-1 5-3 5-6V4z"/></svg></span>Allow Decryption <small>for</small> <em>api.twilio.com</em></div><div><span class="ib "><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3l2 1.5"/></svg></span>when Timestamp is before <em>20/08/2024</em></div><div><span class="ib "><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg></span>and Region equals <em>EU (Ireland)</em></div></div></div><h3>Data Policies</h3><p>Set clear rules that dictate how and when encrypted data can be decrypted.</p></article>
+  <article class="card wide"><div class="log"><div><span class="lg"><svg viewBox="0 0 16 16"><path d="M3 5h10M10 2l3 3-3 3M13 11H3M6 8l-3 3 3 3"/></svg></span><span>Claude</span><small>created Inbound Relay</small><span>api-stripe-com</span></div><div><span class="lg"><svg viewBox="0 0 16 16"><path d="M3 4l4 4-4 4M8 12h5"/></svg></span><span>Nev</span><small>created API Key</small><span>EU Resources Key</span></div><div><span class="lg"><svg viewBox="0 0 16 16"><rect x="3" y="3" width="10" height="10" rx="2"/><path d="M7 11l2-6"/></svg></span><span>Eoin</span><small>deleted Function</small><span>validate-credit-card</span></div><div><span class="lg"><svg viewBox="0 0 16 16"><circle cx="6" cy="5" r="2.5"/><path d="M2 14c0-3 2-4.5 4-4.5s4 1.5 4 4.5M12 4v4M10 6h4"/></svg></span><span>Anna</span><small>invited</small><span>steve@acme.co</span></div><div><span class="lg"><svg viewBox="0 0 16 16"><path d="M3 5h10M10 2l3 3-3 3M13 11H3M6 8l-3 3 3 3"/></svg></span><span>Thomas</span><small>updated Outbound Relay</small><span>api.adyen.co</span></div><div><span class="lg"><svg viewBox="0 0 16 16"><path d="M3 5h10M10 2l3 3-3 3M13 11H3M6 8l-3 3 3 3"/></svg></span><span>Thomas</span><small>created Outbound Relay</small><span>api.adyen.co</span></div><div><span class="lg"><svg viewBox="0 0 16 16"><path d="M3 4l4 4-4 4M8 12h5"/></svg></span><span>Sara</span><small>deleted API Key</small><span>Synthetics Test</span></div></div><h3>Audit Logging</h3><p>Keep track of all user activity within your Evervault Team.</p></article>
+  <article class="card"><h3>Access Control</h3><p>Control which members of your team can access and modify Primitives.</p></article></div>
 </section>
-<section id="trust" class="block wrap">
-  <h2 class="big">Why <b>trust</b> us?</h2>
-  <p class="lead">Evervault is secure by default. We build, manage, and implement security best practices into the platform so you don't have to.</p>
-  <section class="group"><h3>Built for Developers</h3><div><article><h4><i>⚙</i>Fundamentally Configurable</h4><p>Evervault products work together and can be adapted to any type of solution.</p></article><article><h4><i>◷</i>Ultra-Low Latency</h4><p>Encryption and decryption operations introduce a minimal latency penalty.</p></article><article><h4><i>⑂</i>Write and Deploy in Seconds</h4><p>Built so developers spend less time and money on data security and compliance.</p></article></div></section>
-  <section class="group"><h3>Secure by Default</h3><div><article><h4><i>⛉</i>Dual Security Model</h4><p>We store encryption keys, you store data as you normally would — but fully encrypted.</p></article><article><h4><i>▤</i>Compliance</h4><p>We're fully compliant under PCI DSS, HIPAA, GDPR and SOC2.</p></article><article><h4><i>⬡</i>Enclave-backed</h4><p>Built on isolated, hardened, and highly constrained secure enclaves.</p></article></div></section>
-  <section class="group"><h3>Designed for Scale</h3><div><article><h4><i>◎</i>Volume</h4><p>Evervault processes millions of encryption operations every day.</p></article><article><h4><i>◍</i>Globally Distributed</h4><p>Evervault resources are deployed in multiple regions to optimize uptime.</p></article><article><h4><i>⌁</i>Scalable Pricing</h4><p>Affordable, scalable pricing where you only get charged for what you use.</p></article></div></section>
+<section id="trust" class="c"><h2 class="h"><span class="l">Why trust us?</span></h2>
+  <p class="lead">Evervault is secure by default. We build, manage, and implement security best practices into the platform so you don’t have to.</p><section class="grp"><h4>Built for Developers</h4><div><article><h5><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.2"/><circle cx="8" cy="8" r="5.5" stroke-dasharray="2.2 1.3"/></svg>Fundamentally Configurable</h5><p>Evervault products work together and can be adapted to any type of solution.</p></article><article><h5><svg viewBox="0 0 16 16"><circle cx="8" cy="9" r="5"/><path d="M8 9V6M6.5 2h3"/></svg>Ultra-Low Latency</h5><p>Encryption and decryption operations introduce a minimal latency penalty.</p></article><article><h5><svg viewBox="0 0 16 16"><circle cx="4" cy="4" r="1.5"/><circle cx="12" cy="12" r="1.5"/><path d="M4 5.5v1.5a3 3 0 0 0 3 3h3.5"/></svg>Write and Deploy in Seconds</h5><p>Built so developers spend less time and money on data security and compliance.</p></article></div></section><section class="grp"><h4>Secure by Default</h4><div><article><h5><svg viewBox="0 0 16 16"><path d="M8 2 3 4v4c0 3 2.2 5 5 6 2.8-1 5-3 5-6V4z"/></svg>Dual Security Model</h5><p>We store encryption keys, you store data as you normally would — but fully encrypted.</p></article><article><h5><svg viewBox="0 0 16 16"><path d="M4 2h5l3 3v9H4zM9 2v3h3M6 8h4M6 11h4"/></svg>Compliance</h5><p>We’re fully compliant under PCI DSS, HIPAA, GDPR and SOC2.</p></article><article><h5><svg viewBox="0 0 16 16"><path d="M8 2l5 2.8v6.4L8 14l-5-2.8V4.8zM8 8l5-3.2M8 8 3 4.8M8 8v6"/></svg>Enclave-backed</h5><p>Built on isolated, hardened, and highly constrained secure enclaves.</p></article></div></section><section class="grp"><h4>Designed for Scale</h4><div><article><h5><svg viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" rx="1.5"/><rect x="6.5" y="6.5" width="3" height="3"/><path d="M6 2v2M10 2v2M6 12v2M10 12v2M2 6h2M2 10h2M12 6h2M12 10h2"/></svg>Volume</h5><p>Evervault processes millions of encryption operations every day.</p></article><article><h5><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg>Globally Distributed</h5><p>Evervault resources are deployed in multiple regions to optimize uptime.</p></article><article><h5><svg viewBox="0 0 16 16"><path d="M2 2v12h12M5 10l3-3 2 2 4-4"/></svg>Scalable Pricing</h5><p>Affordable, scalable pricing where you only get charged for what you use.</p></article></div></section></section>
+<section id="testimonials"><h2 hidden>Testimonials</h2>
+  <div class="arc"><div id="qlogo"><svg width="36" height="48" viewBox="0 0 20 30"><path d="M6 0h4v10H6a5 5 0 0 1 0-10z" fill="#f24e1e"/><path d="M10 0h4a5 5 0 0 1 0 10h-4z" fill="#ff7262"/><path d="M6 10h4v10H6a5 5 0 0 1 0-10z" fill="#a259ff"/><circle cx="14" cy="15" r="5" fill="#1abcfe"/><path d="M6 20h4v5a5 5 0 1 1-4-5z" fill="#0acf83"/></svg></div></div>
+  <ul><li><button class="on">Dylan Field Figma Founder &amp; CEO</button></li><li><button>Jeff Weiner LinkedIn Exec. Chairman</button></li><li><button>Jessica Carta Ness Head of Product</button></li></ul>
 </section>
-<section id="testimonials" class="block">
-  <h2 hidden>Testimonials</h2>
-  <div class="arc"><div id="q-logo"><svg width="20" height="30" viewBox="0 0 20 30"><path d="M6 0h4v10H6a5 5 0 0 1 0-10z" fill="#f24e1e"/><path d="M10 0h4a5 5 0 0 1 0 10h-4z" fill="#ff7262"/><path d="M6 10h4v10H6a5 5 0 0 1 0-10z" fill="#a259ff"/><circle cx="14" cy="15" r="5" fill="#1abcfe"/><path d="M6 20h4v5a5 5 0 1 1-4-5z" fill="#0acf83"/></svg></div></div>
-  <ul><li><button class="active">Dylan Field Figma Founder &amp; CEO</button></li><li><button>Jeff Weiner LinkedIn Exec. Chairman</button></li><li><button>Jessica Carta Ness Head of Product</button></li></ul>
-</section>
-<section id="cta">
-  <h2 class="big">Meet <b>compliance</b><br>requirements. Build<br>customer trust.</h2>
-  <p class="lead">Use Evervault's flexible building blocks to keep your customers' data secure and compliant at all times.</p>
-  <div class="btns"><a class="btn btn-white" href="#">Request a demo</a><a class="btn-ghost" style="font-size:12px" href="#">Try for free</a></div>
-</section>
+<section class="cta ctr" id="cta"><h2 class="h ctr"><span class="l">Meet compliance</span><span class="l">requirements. Build</span><span class="l">customer trust.</span></h2>
+  <p class="lead">Use Evervault’s flexible building blocks to keep your customers’ data secure and compliant at all times.</p>
+  <div class="btns"><a class="btn w" href="#">Request a demo</a><a class="t" href="#">Try for free</a></div></section>
 </main>
-<footer>
-  <div class="cols">
-    <a class="logo" href="index.html" aria-label="Evervault"><svg width="30" height="30" viewBox="0 0 20 20" fill="#fff"><path d="M10 1 1 4.5v2L10 10l9-3.5v-2z"/><path d="M1 8.5v2L10 14l9-3.5v-2L10 12z"/><path d="M1 12.5v2L10 19l9-4.5v-2L10 16z"/></svg></a>
-    <nav><h2>Company</h2><ul><li>Blog</li><li>Careers</li><li>Pricing</li><li>Customers</li></ul></nav>
-    <nav><h2>Resources</h2><ul><li>Documentation</li><li>Papers</li><li>Press</li></ul></nav>
-    <nav><h2>Solutions</h2><ul><li>PCI Compliance</li><li>Encryption as a Service</li><li>Credentials Encryption</li><li>File Encryption</li><li>PII Encryption</li><li>HIPAA Compliance</li></ul></nav>
-    <nav><h2>Legal</h2><ul><li>Terms of Service</li><li>Privacy Policy</li><li>Cookies Policy</li><li>Data Processing</li></ul></nav>
-    <nav><h2>Compliance</h2><ul><li>▣ PCI Level 1</li><li>◎ SOC 2 Type II</li></ul></nav>
-  </div>
-  <div class="bottom"><p>© 2023 Evervault Inc. All rights reserved.</p><p>All systems normal</p></div>
-</footer>
+<footer class="ft"><div class="cols"><a href="index.html" aria-label="Evervault"><svg width="46" height="49" viewBox="0 0 24 26" fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-linecap="round"><path stroke-width="1.5" d="M12 2 3 6.5l9 4.5 9-4.5z"/><path fill="none" stroke-width="2.4" d="M3.5 12 12 16.2 20.5 12M3.5 17.5 12 21.7l8.5-4.2"/></svg></a>
+  <nav><h6>Company</h6><ul><li>Blog</li><li>Careers</li><li>Pricing</li><li>Customers</li></ul></nav>
+  <nav><h6>Resources</h6><ul><li>Documentation</li><li>Papers</li><li>Press</li></ul></nav>
+  <nav><h6>Solutions</h6><ul><li>PCI Compliance</li><li>Encryption as a Service</li><li>Credentials Encryption</li><li>File Encryption</li><li>PII Encryption</li><li>HIPAA Compliance</li></ul></nav>
+  <nav><h6>Legal</h6><ul><li>Terms of Service</li><li>Privacy Policy</li><li>Cookies Policy</li><li>Data Processing</li></ul></nav>
+  <nav><h6>Compliance</h6><ul><li><svg width="16" height="12" viewBox="0 0 16 12"><rect width="16" height="12" rx="2" fill="#6d6d86"/></svg>PCI Level 1</li><li><svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="#6d6d86"/></svg>SOC 2 Type II</li></ul></nav></div>
+  <div class="bot"><span>© 2023 Evervault Inc. All rights reserved.</span><span>All systems normal</span></div></footer>
 <script src="script.js"></script>
 </body>
 </html>
